@@ -1,31 +1,22 @@
+function createHelloWorld() {
+    // Define the inner function that always returns "Hello World"
+    function helloWorld() {
+      return "Hello World";
+    }
+  
+    // Return the helloWorld function
+    return helloWorld;
+  }
+  
+  // Usage example:
+  const helloFunction = createHelloWorld();
+  console.log(helloFunction()); // Output: "Hello World"
+  console.log(helloFunction()); // Output: "Hello World"
 
-// var createHelloWorld = function() {
-//     return function() {
+  // Single answer
+  const helloWorld=()=>()=>"HelloWorld";
 
-//         return "Hello World"
-        
-//     }
-// };
+  const func = helloWorld();
 
-// console.log(createHelloWorld());
-
-
-var sub=(a,b)=>{
-    return a-b;
-}
-
-console.log(sub(6,2));
-
-
-var createHelloWorld=()=>{
-    
-    return "Hello World by Vikas"
-}
-
-
-
-
-// const createHelloWorld =() =>()=> "Hello World";
-
-
-console.log(createHelloWorld())
+  console.log(func())
+  
